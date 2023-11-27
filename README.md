@@ -1,7 +1,13 @@
 # YT-pl-ec2
 # How to deploy this app on EC2
 
+## Create an instance and allow connections
+
 ![Screenshot](/image/set01.png?raw=true "EC2 test")
+
+![Screenshot](/image/set02.png?raw=true "EC2 test")
+
+![Screenshot](/image/set03.png?raw=true "EC2 test")
 
 1
 sudo apt-get update
