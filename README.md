@@ -1,4 +1,8 @@
 # YT-pl-ec2
+# How to deploy this app on EC2
+
+![alt text](https://github.com/QbasicFan/YT-pl-ec2/image/set01.png
+
 1
 sudo apt-get update
 
