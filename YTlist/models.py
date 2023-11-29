@@ -23,21 +23,18 @@ class bookMark(models.Model):
     def save(self, *args, **kwargs):
 
 
-        sss = self.link
-        str = ''
-        count = 0
+        getLink = self.link
 
-        for a in sss:
+        linkType = "shorts"
+        delimLength = 7
+        if "=" in getLink:
+            linkType = "="
+            delimLength = 1
 
-        	if a == '&':
-        		count = 2
-        	elif count == 1:
-        		str += a
-        	elif a == "=" and count == 0:
-        		count = 1
+        delim = getLink.find(linkType)
+        self.vid = getLink[delim+delimLength:len(getLink)]
 
 
-        self.vid = str
         super(bookMark, self).save(*args, **kwargs)
 
     def __str__(self):
